@@ -1,3 +1,9 @@
+{{!-- error is a var in passport --}}
+{{#if error}}
+  <div class="alert alert-danger">{{error}}</div>
+{{/if}}
+
+{{!-- errors is an array we make for input validation --}}
 {{#each errors}}
   <div class="alert alert-danger">{{text}}</div>
 {{else}}
